@@ -115,41 +115,41 @@ getBiggestNumber3(3, 7);
 Вывести поочередно числа и их произведение с числом M, если произведение с чиcлом M - нечетное.
 Написать три экземпляра функции, используя поочередно все циклы. Функцию вызвать в конце скрипта. */
 
-const getSum1 = (n, m) => {
+const getNumbersProduct1 = (n, m) => {
     for (let currentNumber = 1; currentNumber <= n; currentNumber++) {
-        let sum = currentNumber + m;
+        let numbersProduct = currentNumber * m;
 
-        if (currentNumber % 2) {
-            console.log('Current number: ' + currentNumber + ',', 'Sum of current number and M: ' + (sum));
+        if (numbersProduct % 2) {
+            console.log('Current number: ' + currentNumber + ',', 'Current number multiple M: ' + (numbersProduct));
         }
     }
 }
 
-const getSum2 = (n, m) => {
+const getNumbersProduct2 = (n, m) => {
     let currentNumber = 1;
 
     while (currentNumber <= n) {
-        if (currentNumber % 2) {
-            let sum = currentNumber + m;
-            console.log('Current number: ' + currentNumber + ',', 'Sum of current number and M: ' + (sum));
+        let numbersProduct = currentNumber * m;
+        if (numbersProduct % 2) {
+            console.log('Current number: ' + currentNumber + ',', 'Current number * M:: ' + (numbersProduct));
         }
         currentNumber++;
     }
 }
 
-const getSum3 = (n, m) => {
+const getNumbersProduct3 = (n, m) => {
     let currentNumber = 1;
 
     do {
-        if (currentNumber % 2) {
-            let sum = currentNumber + m;
-            console.log('Current number: ' + currentNumber + ',', 'Sum of current number and M: ' + (sum));
+        let numbersProduct = currentNumber * m;
+        if (numbersProduct % 2) {
+            console.log('Current number: ' + currentNumber + ',', 'Current number multiple M: ' + (numbersProduct));
         }
         currentNumber++;
     } while (currentNumber <= n)
 }
 
 
-getSum1(5, 2);
-getSum2(4, 1);
-getSum3(3, 3);
+getNumbersProduct1(5, 3);
+getNumbersProduct2(3, 7);
+getNumbersProduct3(3, 3);
